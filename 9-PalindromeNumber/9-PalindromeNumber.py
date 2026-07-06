@@ -1,10 +1,9 @@
-# Last updated: 7/6/2026, 11:14:44 AM
-1class Solution:
-2    def isPalindrome(self, x: int) -> bool:
-3        if x < 0:
-4            return False
-5        rev = int(str(x)[::-1])
-6        if rev == x:
-7            return True
-8        return False
-9        
+# Last updated: 7/6/2026, 11:15:41 AM
+class Solution:
+   def isPalindrome(self, x: int) -> bool:
+       if x < 0:
+           return False
+       x = str(x)
+       return x == x[::-1]
+
+        
